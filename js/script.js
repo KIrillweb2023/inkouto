@@ -28,7 +28,7 @@ closeModal.addEventListener('click', () =>{
 const forms = document.querySelectorAll('form');
 
 const message = {
-    loading: '../src/icons/spinner.svg',
+    loading: '../icons/spinner.svg',
     completed: 'Данные успешно отправились! Мы вам перезвоним в ближайшее время...',
     faulting: 'Ошибка!'
 };
