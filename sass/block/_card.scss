@@ -1,0 +1,41 @@
+.card{
+    min-height: 1100px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .card__btn{
+        position: relative;
+        top: -180px;
+        left: 95px;
+    }
+    &__title{
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .btn{
+        margin-top: 30px;
+        font-size: 17px;
+        color: #fff;
+        width: 275px;
+        height: 55px;
+        border: none;
+        border-radius: 50px;
+        &:hover{
+            background: #fff;
+            color: #000;
+            transition: 0.6s;
+        }
+    }
+    .catalog_link{
+        text-decoration: none;
+    }
+    .red_butn{
+        display: block;
+        margin: 0 auto;
+        margin-top: 0;
+    }
+   
+}

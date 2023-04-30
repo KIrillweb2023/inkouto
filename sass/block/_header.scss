@@ -1,0 +1,51 @@
+.header{
+    height: 90px;
+    background-color:  #172027;
+    padding-top: 30px;
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .messanges{
+        display: flex;
+        margin-left: 360px;
+        margin-top: 15px;
+        .messange__item{
+            margin-left: 15px;
+            cursor: pointer;
+        }
+    }
+    .header__logo{
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .header__phone{
+        display: flex;
+        img{
+            width: 15px;
+        }
+        .phone{
+            color: #fff;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+    }
+    .phone__btn{
+        width: 180px;
+        height: 40px;
+        cursor: pointer;
+        background: linear-gradient(360deg, #077A34 0%, #19E270 100%);
+        box-shadow: 0px 9px 48px rgba(24, 220, 109, 0.15);
+        border-radius: 43px;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        margin-top: 8px;
+        &:hover{
+            background: #fff;
+            color: #000;
+            border: 1px solid #18DE6E;
+        }
+    }
+}

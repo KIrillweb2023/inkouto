@@ -1,0 +1,27 @@
+.materials{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_title{
+        font-weight: 700;
+        margin-left: 50px;
+    }
+    &__item{
+        width: 370px;
+    }
+    &_text{
+        position: relative;
+        left: 45px;
+        bottom: 30px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 25px;
+    }
+    &__descr{
+        font-size: 18px;
+        margin-top: 20px;
+        color: #0F0F10;
+    }
+}

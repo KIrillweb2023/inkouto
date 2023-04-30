@@ -1,0 +1,18 @@
+.menu{
+    height: 40px;
+    background: #F2F2F3;
+    padding-top: 20px;
+    .menu__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        list-style-type: none;
+    }
+    &__link{
+        color: #000;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

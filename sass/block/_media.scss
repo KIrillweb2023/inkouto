@@ -1,0 +1,483 @@
+
+@media (max-width: 1200px){
+    .header{
+        padding-right: 20px;
+        padding-left: 20px;
+        .messanges{
+          margin-left: 200px;
+        }
+    }
+    .menu{
+        .menu__items{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    .promo{
+        padding-left: 40px;
+        padding-right: 40px;
+        &__wrapper{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 160px;
+        }
+        &__item{
+            width: 457px;
+        }
+        .mt_item{
+            margin-top: 30px;
+        }
+    }
+    .card{
+        min-height: 1740px;
+        &__wrapper{
+            flex-wrap: wrap;
+        }
+        .car__photo{
+            width: 466px;
+            height: 730px;
+        }
+        .red_butn{
+            margin-top: 50px;
+        }
+    }
+    .ecodrive{
+        padding-left: 20px;
+        padding-right: 20px;
+        &__title{
+            font-weight: 700;
+            text-align: center;
+        }
+        &__wrapper{
+            margin-top: 0;
+        }
+        &__items{
+            align-items: center;
+            margin-top: 50px;
+        }
+        .eco_text{
+            width: 350px;
+        }
+        &__descr{
+            margin-top: 5px;
+        }
+    }
+    .materials{
+        &_title{
+            text-align: center;
+            font-size: 30px;
+            margin-left: 0;
+        }
+        &__wrapper{
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__item{
+            width: 910px;
+            text-align: center;
+            img{
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                left: 30px;
+            }
+        }
+    }
+    .footer{
+        padding-left: 10px;
+        padding-right: 10px;
+        .messanges{
+            margin-left: 230px;
+        }
+    }
+}
+@media (max-width: 992px){
+   .promo{
+        &__title{
+            font-size: 40px;
+        }
+        &__subtitle{
+            font-size: 18px;
+        }
+        .btn{
+            width: 245px;
+        }
+        &__wrapper{
+            margin-top: 120px;
+            .item__icon{
+                img{
+                    width: 50px;
+                }
+            }
+            .promo__item {
+                width: 305px;
+                margin-top: 20px;
+            }
+            .descr{
+                font-size: 15px;
+            }
+        }
+        
+   }
+    .arrow{
+        span{
+            display: block;
+        }
+    }
+    .triggers{
+        display: block;
+    }
+    .hamburger{
+        span{
+            display: block;
+        }  
+    }
+    .close_header{
+        display: block;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 30%;
+        z-index: 11;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.4s all;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        &.active{
+            left: 0;
+            visibility: visible;
+            opacity: 1;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+        }
+        .header__logo{
+            display: block;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+        .phone__btn{
+            position: absolute;
+            bottom: 100px;
+            left: 54px;
+            display: block;
+            margin: 0 auto; 
+        }
+        .header__phone{
+            position: absolute;
+            bottom: 150px;
+            left: 60px;
+            .phone{
+                margin-top: 2px;
+                font-size: 18px;
+            }
+        }
+        .messanges{
+            position: absolute;
+            bottom: 180px;
+            margin-left: 41px;
+        }
+    }
+    .menu{
+        position: fixed;
+        top: -100%;
+        height: 200px;
+        width: 100%;
+        z-index: 10;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.4s all;
+        padding-top: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        &.active{
+            top: 0;
+            visibility: visible;
+            opacity: 1;
+        }
+        &__link{
+            font-size: 18px;
+            color: #fff;
+        }
+    
+        .menu__items{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item{
+            margin-top: 15px;
+        }
+    }
+    .card{
+        min-height: 1750px;
+        padding-bottom: 50px;
+        .red_butn{
+            margin-top: 50px;
+        }
+    }
+    .ecodrive{
+        min-height: 1000px;
+        padding-left: 40px;
+        padding-right: 40px;
+        &__title{
+            font-size: 30px;
+        }
+        &__wrapper{
+            display: flex;
+            justify-content: center;
+        }
+        .eco_text{
+            width: 600px;
+        }
+    }
+    .materials{
+        &__item{
+            width: 680px;
+            img{
+                left: 40px;
+            }
+        }
+    }
+    .footer{
+        padding-left: 10px;
+        padding-right: 10px;
+        .messanges{
+            margin-left: 25px;
+        }
+        .menu__items{
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    .modal{
+        &__window{
+            max-width: 470px;
+        }
+        &__content{
+            height: 480px;
+        }
+        .modal_img{
+            display: none;
+        }
+    }
+}
+@media (max-width: 768px){
+    .header{
+        width: 40%;
+    }
+    .promo{
+        &__title{
+            font-size: 30px;
+        }
+        &__subtitle{
+            font-size: 16px;
+        }
+        .btn{
+            width: 270px;
+            height: 35px;
+        }
+        &_btn-red{
+            margin-left: 0;
+        }
+        &__wrapper{
+            margin-top: 30px;
+            justify-content: center;
+        }
+        .promo__item{
+            margin-top: 50px;
+            width: 480px;
+            .descr{
+                font-size: 18px;
+            }
+        }
+    }
+    .ecodrive{
+        &__wrapper{
+            display: flex;
+            justify-content: center;
+        }
+        min-height: 1150px;
+        padding: 100px 10px 0 10px;
+        .eco_text{
+            max-width: 450px;
+        }
+    }
+    .materials{
+        &__item{
+            width: 480px;
+            img{
+                left: 45px;
+            }
+        }
+    }
+    .footer{
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        .messanges{
+           display: none;
+        }
+        .menu__items{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .header__logo{
+            img{
+                width: 150px;
+            }
+        }
+    }
+}
+@media (max-width: 567px){
+    .container{
+        width: 100%;
+    }
+    .header{
+        padding: 18px;
+        width: 80%;
+    }
+    .promo{
+        padding: 100px 10px 0px 10px;
+        &__title{
+            font-size: 24px;
+        }
+        &__subtitle{
+            font-size: 16px;
+        }
+        .item__icon{
+            img{
+                width: 50px;
+            }
+        }
+        .promo__item{
+            .descr{
+                font-size: 16px;
+            }
+        }
+    }
+    .card {
+        min-height: 1600px;
+        &__title{
+            font-size: 25px;
+        }
+        &__wrapper{
+            margin-top: 0;
+        }
+        .car__photo{
+            width: 300px;
+            height: 480px;
+            img{
+                width: 100%;
+            }
+        } 
+        .btn{
+            width: 170px;
+            height: 30px;
+        }
+        .card__btn{
+            top: -120px;
+            left: 65px;
+        } 
+        .red_butn{
+            height: 40px;
+            width: 250px;
+        }
+    }
+    .ecodrive{
+        min-height: 1900px;
+        padding: 100px 10px 0 10px;
+        &__title{
+            font-size: 25px;
+        }
+        .eco_text{
+            max-width: 300px;
+            margin-left: 0;
+        }
+        .eco__title{
+            text-align: center;
+        }
+        &__descr{
+            text-align: center;
+        }
+        &__items{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+    }
+    .map{
+        &__title{
+            font-size: 25px;
+            text-align: center;
+        }
+        iframe{
+            margin-top: 30px;
+        }
+    }
+    .materials{
+        &__wrapper{
+            align-items: center;
+        }
+        &__item{
+            width: 300px;
+            img{
+                width: 100%;
+                left: 0px;
+            }
+        }
+        &_text{
+            left: 0;
+        }
+        &__title{
+            font-size: 20px;
+        }
+        &_title{
+            font-size: 25px;
+        }
+        &__descr{
+            font-size: 16px;
+        }
+    }
+    .footer{
+        min-height: 400px;
+        nav{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .header__phone img {
+            margin-top: 15px;
+        }
+    }
+    .modal{
+        &__title{
+            font-size: 20px;
+        }
+        &__subtitle{
+            font-size: 14px;
+        }
+        &__window{
+            max-width: 300px;
+        }
+        &_input {
+            width: 250px;
+            height: 45px;
+        }
+        &__content{
+            height: 450px;
+        }
+        &_img{
+            display: none;
+        }
+        &_btn{
+            width: 250px;
+            height: 40px;
+        }
+    }
+}

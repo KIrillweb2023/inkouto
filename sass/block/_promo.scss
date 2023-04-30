@@ -1,0 +1,53 @@
+.promo{
+    height: 750px;
+    padding-top: 200px;
+    background: url('../img/section__promo/main_bg.png') center (center / cover) no-repeat;
+    &__title{
+        color: #fff;
+    }
+    &__subtitle{
+        font-size: 22px;
+        color: #fff;
+        margin-top: 20px;
+    }
+    
+    &_btn-green{
+        background: linear-gradient(360deg, #077A34 0%, #19E270 100%);
+        box-shadow: 0px 9px 48px rgba(24, 220, 83, 0.308);
+    }
+    &_btn-red{
+        background: linear-gradient(360deg, #a30b0b 0%, #e21919 100%);
+        box-shadow: 0px 9px 48px rgba(220, 24, 24, 0.26);
+        margin-left: 30px;
+    }
+    .btn{
+        margin-top: 30px;
+        font-size: 17px;
+        color: #fff;
+        width: 275px;
+        height: 55px;
+        border: none;
+        border-radius: 50px;
+        &:hover{
+            background: #fff;
+            color: #000;
+            transition: 0.6s;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 250px;
+    }
+    &__item{
+        display: flex;
+        width: 340px;
+       
+        .descr{
+            margin-left: 20px;
+            margin-top: 10px;
+            font-size: 17px;
+            color: #fff;
+        }
+    }
+}

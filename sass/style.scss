@@ -1,0 +1,56 @@
+@import 'block/title', 'block/card', 'block/catalog', 'block/ecodrive', 'block/footer', 'block/header', 'block/information',
+ 'block/map', 'block/materials', 'block/menu', 'block/modal', 'block/network', 'block/promo', 'block/qeustion';
+
+@import 'settings/settings';
+@import 'media-settings/triggers';
+
+@import 'block/media';
+
+
+.container{
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal_img{
+    display: block;
+}
+
+.offer__slider-prev{
+    img{
+        width: 100px
+    }
+}
+.offer__slider-next{
+    img{
+        width: 100px;
+        transform: rotate(180deg);
+    }
+}
+.wrapper_mt{
+    margin-top: 50px;
+}
+.btn{
+    margin-top: 30px;
+    font-size: 17px;
+    color: #fff;
+    width: 275px;
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    &:hover{
+        background: #fff;
+        color: #000;
+        transition: 0.6s;
+    }
+}
+.height{
+    height: 150px;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}

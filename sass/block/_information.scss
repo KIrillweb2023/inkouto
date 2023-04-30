@@ -1,0 +1,21 @@
+.information{
+    min-height: 1500px;
+    &_item{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .info_text{
+        margin-top: 40px;
+    }
+    .info_title{
+        font-size: 25px;
+        color: #0F0F10;
+        font-weight: 600;
+    }
+    .info_descr{
+        margin-top: 20px;
+        font-size: 17px;
+        color: #0F0F10;
+    }
+}

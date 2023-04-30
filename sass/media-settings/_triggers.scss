@@ -1,0 +1,58 @@
+.arrow{
+    z-index: 10;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    span{
+        display: none;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+    }
+    .rotateR{
+        transform: rotate(-37deg);
+    }
+    .rotateL{
+        transform: rotate(37deg);
+    }
+}
+.triggers{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    height: 56px;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+.hamburger{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    span{
+        display: none;
+        width: 35px;
+        height: 3px;
+        background-color: #fff;
+    }
+} 
+.close_header{
+    position: absolute;
+    display: none;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+} 
