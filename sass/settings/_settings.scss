@@ -7,8 +7,12 @@ a{
 ::-webkit-scrollbar {
     width: 0;
 }
- 
-
+input {
+    outline: none;
+}
+textarea{
+    outline: none;
+}
 *{
     font-family: 'Roboto', sans-serif;
     padding: 0;
