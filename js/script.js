@@ -158,6 +158,12 @@ button.forEach(item =>{
     });
 });
 
+
+
+
+
+
+
 const header = document.querySelector('.header');
 const closeBtn = document.querySelector('.close_header');
 const openBtn = document.querySelector('.hamburger');

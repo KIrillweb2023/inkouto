@@ -3,8 +3,9 @@
 
 @import 'settings/settings';
 @import 'media-settings/triggers';
-
-@import 'block/media';
+// media
+@import 'media-settings/media-home';
+@import 'media-settings/media-catalog';
 
 
 .container{
