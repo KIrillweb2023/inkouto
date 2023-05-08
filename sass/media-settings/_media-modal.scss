@@ -1,0 +1,53 @@
+@media (max-width: 1200px){
+    
+}
+@media (max-width: 992px){
+    .modal{
+        &__window{
+            max-width: 470px;
+        }
+        &__content{
+            height: 480px;
+        }
+        .modal_img{
+            display: none;
+        }
+    }
+}
+@media (max-width: 768px){
+
+}
+@media (max-width: 567px){
+    .modal{
+        &__title{
+            font-size: 20px;
+        }
+        &__subtitle{
+            font-size: 14px;
+        }
+        &__window{
+            max-width: 300px;
+            margin: 100px auto;
+        }
+        &_input {
+            width: 250px;
+            height: 45px;
+            font-size: 14px;
+        }
+        &__content{
+            height: 450px;
+        }
+        &_img{
+            display: none;
+        }
+        &_btn{
+            width: 250px;
+            height: 40px;
+            font-size: 14px;
+        }
+        .policy{
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}

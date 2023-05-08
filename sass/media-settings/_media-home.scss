@@ -250,17 +250,6 @@
             justify-content: space-around;
         }
     }
-    .modal{
-        &__window{
-            max-width: 470px;
-        }
-        &__content{
-            height: 480px;
-        }
-        .modal_img{
-            display: none;
-        }
-    }
 }
 @media (max-width: 768px){
     .header{
@@ -338,6 +327,14 @@
         padding: 18px;
         width: 70%;
         background-color: rgba(0, 0, 0, 0.7);
+        .messange__item{
+            &:nth-child(1){
+                margin-left: 0;
+            }
+        } 
+        .btn{
+            font-size: 14px;
+        }
     }
     .menu{
         background-color: rgba(0, 0, 0, 0.7);
@@ -468,35 +465,6 @@
             margin-top: 15px;
         }
         .menu__item a{
-            font-size: 14px;
-        }
-    }
-    .modal{
-        &__title{
-            font-size: 20px;
-        }
-        &__subtitle{
-            font-size: 14px;
-        }
-        &__window{
-            max-width: 300px;
-        }
-        &_input {
-            width: 250px;
-            height: 45px;
-        }
-        &__content{
-            height: 450px;
-        }
-        &_img{
-            display: none;
-        }
-        &_btn{
-            width: 250px;
-            height: 40px;
-        }
-        .policy{
-            text-align: center;
             font-size: 14px;
         }
     }
