@@ -33,6 +33,9 @@
         &_descr.active{
             width: 715px;
         }
+        .question_descr{
+            width: 715px;
+        }
         .height{
             height: 180px;
         }
@@ -63,6 +66,9 @@
             font-size: 17px;
         }
         &_descr.active{
+            width: 500px;
+        }
+        .question_descr{
             width: 500px;
         }
         .height{
@@ -99,12 +105,17 @@
         &_text{
             font-size: 14px;
         }
+        .question_descr{
+            width: 265px;
+            font-size: 13px;
+        }
         &_descr.active{
             width: 265px;
             font-size: 13px;
         }
+        
         .height{
-            height: 300px;
+            height: 320px;
         }
         &_arrow{
             img{
