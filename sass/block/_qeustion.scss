@@ -40,19 +40,16 @@
         }
     }
    
-    &_reimer{
-        .question_descr{
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
-            width: 1110px;
-            margin-top: 15px;
-            &.active{
-                visibility: visible;
-                opacity: 1;
-            }
+    .question_descr{
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        width: 1110px;
+        margin-top: 15px;
+        &.active{
+           visibility: visible;
+           opacity: 1;
         }
-       
     }
     
 }
