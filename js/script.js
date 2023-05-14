@@ -30,7 +30,7 @@ const forms = document.querySelectorAll('form');
 const message = {
     loading: '../icons/spinner.svg',
     completed: 'Данные успешно отправились! Мы вам перезвоним в ближайшее время...',
-    faulting: 'Ошибка!'
+    faulting: 'Ошибка! Сервер неработает!'
 };
 forms.forEach(item =>{
     postServer(item);
@@ -144,19 +144,43 @@ function postServer(form){
     });
 });
 // descr
+const buttons = document.querySelectorAll('.buttonScroll_descr');
+const arrowBtn = document.querySelectorAll('.question_arrow');
 
+buttons.forEach(item =>{
+    item.addEventListener('click', (e) =>{
+         
+        let content = item.nextElementSibling;
+        console.log(content);
 
-const button = document.querySelectorAll('.question_arrow');
-const description = document.querySelector('.question_descr');
-const reim = document.querySelector('.question_reimer');
-
-
-button.forEach(item =>{
-    item.addEventListener('click', () =>{
-        description.classList.toggle('active');
-        reim.classList.toggle('height');
+        if(content.style.maxHeight){
+            document.querySelectorAll('.descr_button').forEach((item) => item.style.maxHeight = null);
+           
+        }else{
+            document.querySelectorAll('.descr_button').forEach((item) => item.style.maxHeight = null);
+            content.style.maxHeight = content.scrollHeight + 'px';
+        }
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -170,9 +194,11 @@ const openBtn = document.querySelector('.hamburger');
 
 openBtn.addEventListener('click', () =>{
     header.classList.add('active');
+    document.body.style.overflow = 'hidden';
 });
 closeBtn.addEventListener('click', () =>{
     header.classList.remove('active');
+    document.body.style.overflow = '';
 });
 
 const arrowClick = document.querySelector('.arrow');
@@ -184,12 +210,14 @@ arrowClick.addEventListener('click', () =>{
 });
 function arrowRotate(arrow){
     if(menu.classList.contains('active')){
+        document.body.style.overflow = 'hidden';
         arrow.style.transform = 'rotate(90deg)';
         arrow.style.transition = '0.6s all';
         arrow.style.marginTop = '160px';
     } else {
         arrow.style.transform = '';
         arrow.style.marginTop = '';
+        document.body.style.overflow = '';
     }
 }
 

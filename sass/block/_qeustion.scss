@@ -1,5 +1,5 @@
 .question{
-    min-height: 900px;
+    height: auto;
     &_title{
         font-weight: 700;
     }
@@ -11,45 +11,48 @@
     &__wrapper{
         margin-top: 100px;
     }
-    &_item{
-        width: 1120px;
-        box-shadow: 0px 5px 48px rgba(49, 47, 47, 0.144);
+   
+    .descr_button{
+        padding-left: 30px;
+        padding-right: 30px;
+        max-height: 0px;
+        overflow: hidden;
+        width: 1110px;
+        background-color: rgb(238, 238, 238);
         border-radius: 20px;
-        padding: 10px 30px 10px 30px;
-        margin-top: 20px;
+        margin-top: 15px;
+        transition: 0.3s all ease-out;
         
-       // &:hover{
-        //    box-shadow: none;
-        //}
     }
-    &_reimes{
-        width: 1100px;
+       
+        
+    }
+   
+    .buttonScroll_descr{
+        font-size: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-
-    &_text{
-        font-size: 20px;
+        width: 1110px;
         color: #0F0F10;
+        background-color: rgb(238, 238, 238);
         font-weight: 700;
+        box-shadow: 0px 5px 10px rgba(49, 47, 47, 0.144);
+        border-radius: 20px;
+        padding: 15px 30px 15px 30px;
+        margin-top: 10px;
+        transition: 0.4s all;
+        &:hover{
+            box-shadow: none;
+        }
     }
+   
+
     .question_arrow{
+        img{
+            width: 25px;
+        }
         &.active{
             transform: rotate(180deg);
         }
     }
-   
-    .question_descr{
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-        width: 1110px;
-        margin-top: 15px;
-        &.active{
-           visibility: visible;
-           opacity: 1;
-        }
-    }
-    
-}

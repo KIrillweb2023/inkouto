@@ -8,11 +8,12 @@
             flex-direction: column;
             align-items: center;
         }
-        &_item{
+        .buttonScroll_descr{
             width: 900px;
+            font-size: 19px;
         }
-        &_reimes{
-            width: 890px;
+        .descr_button{
+            width: 900px;
         }
     }
 }
@@ -24,26 +25,18 @@
         &__title{
             font-size: 30px;
         }
-        &_item{
-            width: 680px;
+        .buttonScroll_descr{
+            width: 470px;
+            font-size: 17px;
         }
-        &_reimes{
-            width: 695px;
+        .descr_button{
+            width: 470px;
         }
-        &_descr.active{
-            width: 715px;
-        }
-        .question_descr{
-            width: 715px;
-        }
-        .height{
-            height: 180px;
-        }
+       
     }
 }
 @media (max-width: 768px){
     .question{
-        min-height: 700px;
         &_title{
             font-size: 25px;
         }
@@ -56,29 +49,19 @@
         &__wrapper{
             margin-top: 25px;
         }
-        &_item{
-            width: 480px;
-        }
-        &_reimes{
-            width: 490px;
-        }
-        &_text{
+        .buttonScroll_descr{
+            width: 460px;
             font-size: 17px;
+            border-radius: 5px;
         }
-        &_descr.active{
-            width: 500px;
-        }
-        .question_descr{
-            width: 500px;
-        }
-        .height{
-            height: 180px;
+        .descr_button{
+            width: 460px;
+            border-radius: 5px;
         }
     }
 }
 @media (max-width: 567px){
     .question{
-        min-height: 700px;
         padding-bottom: 50px;
         &_title{
             text-align: center;
@@ -96,26 +79,16 @@
         &__wrapper{
             margin-top: 25px;
         }
-        &_item{
+       
+        .buttonScroll_descr{
             width: 245px;
-        }
-        &_reimes{
-            width: 265px;
-        }
-        &_text{
             font-size: 14px;
+            border-radius: 5px;
         }
-        .question_descr{
-            width: 265px;
-            font-size: 13px;
-        }
-        &_descr.active{
-            width: 265px;
-            font-size: 13px;
-        }
-        
-        .height{
-            height: 320px;
+        .descr_button{
+            width: 245px;
+            border-radius: 5px;
+            font-size: 14px;
         }
         &_arrow{
             img{
